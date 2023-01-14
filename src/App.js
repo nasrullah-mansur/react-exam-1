@@ -2,7 +2,6 @@ import { createRoutesFromElements, Route, RouterProvider } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import Create from "./components/Create";
 import Todo from "./components/Todo";
-import User from "./components/User";
 import Layout from "./Layout";
 
 function App() {
