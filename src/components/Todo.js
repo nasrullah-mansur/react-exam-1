@@ -118,13 +118,14 @@ function Todo() {
         }
     };
 
-    // Delete;
+    // Delete modal;
     const deleteHandler = (id) => {
         setDeleteKey(id);
         setOpen(true);
         setModalFor("delete");
     };
 
+    // Delete data from database;
     const deleteItemHandler = () => {
         setOpen(false);
         remove(ref(db, "todos/" + deleteKey));
